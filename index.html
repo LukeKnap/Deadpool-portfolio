@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+Lukas Knap
+lukasknap89@gmail.com
+Luke  -luke8904
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../dist/output.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/856289d6c6.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>Deadpool - portfolio</title>
+</head>
+
+<body class="font-nunito">
+    <header id="homepage"
+        class="h-screen bg-red-300 dark:bg-gradient-to-r from-gray-700 via-gray-900 to-black overflow-hidden relative">
+        <nav class="w-full fixed top-0 bg-red-300 dark:bg-gradient-to-r from-gray-700 via-gray-900 to-black z-10">
+            <div class="container mx-auto py-5 flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                    <img src="../img/emoji-deadpool-logo.png" alt="Logo" class="hidden md:block w-24 z-10 animate-pulse">
+                    <div
+                        class="hidden md:block absolute w-28 h-28 bg-gradient-to-b from-gray-900 to-gray-600 bg-gradient-to-r rounded-full">
+                    </div>
+                </div>
+
+                <div class="hidden absolute top-0 left-0 w-full py-14 md:block md:static md:py-0 md:border-none md:w-auto md:ml-auto md:flex-row"
+                    id="nav-menu">
+
+                    <ul class="flex flex-col text-center md:flex-row gap-5 ">
+                        <li>
+                            <a href="#homepage"
+                                class="nav__link text-gray-800 dark:text-red-600 hover:text-gray-400 dark:hover:text-gray-400 uppercase font-bold ease-in duration-200">Homepage</a>
+                        </li>
+                        <li>
+                            <a href="#about"
+                                class="nav__link text-gray-800 dark:text-red-600 hover:text-gray-400 dark:hover:text-gray-400 uppercase font-bold ease-in duration-200">About
+                                Us</a>
+                        </li>
+                        <li>
+                            <a href="#services"
+                                class="nav__link text-gray-800 dark:text-red-600 hover:text-gray-400 dark:hover:text-gray-400 uppercase font-bold ease-in duration-200">Services</a>
+                        </li>
+                        <li>
+                            <a href="#works"
+                                class="nav__link text-gray-800 dark:text-red-600 hover:text-gray-400 dark:hover:text-gray-400 uppercase font-bold ease-in duration-200">Works</a>
+                        </li>
+                        <li>
+                            <a href="#contact"
+                                class="nav__link text-gray-800 dark:text-red-600 hover:text-gray-400 dark:hover:text-gray-400 uppercase font-bold ease-in duration-200">Contact</a>
+                        </li>
+                    </ul>
+
+                    <div class="absolute top-[0.7rem] right-4 text-2xl cursor-pointer md:hidden dark:text-red-600"
+                        id="nav-close">
+                        <i class="fa-solid fa-skull-crossbones"></i>
+                    </div>
+                </div>
+
+                <div class="flex items-center gap-5">
+                    <i class="ri-moon-fill cursor-pointer ml-4 text-xl dark:text-red-600" id="theme-toggle"></i>
+
+                    <div class="md:hidden" id="hamburger">
+                        <i class="ri-menu-2-line cursor-pointer text-xl dark:text-red-600"></i>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Into CONTENT -->
+
+        <!-- Image -->
+        <img class="home-image absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-5/6 object-cover mx-auto mt-20 z-10"
+            src="../img/deadpool-main.png" alt="main image">
+
+        <!-- circle -->
+        <div
+            class="hidden lg:block absolute w-big h-big right-0 left-0 mx-auto bg-gradient-to-b from-gray-900 to-gray-600 bg-gradient-to-r rounded-full -bottom-1/4">
+        </div>
+        <!-- Animated text -->
+        <div
+            class="home-text absolute top-1/3 left-5 text-xl sm:left-5 sm:text-4xl md:left-1/4 md:text-6xl lg:left-5 xl:left-40 xl:text-7xl font-bold z-10 ">
+            <span class="text-gray-950 dark:text-gray-300 hidden lg:flex flex-col">„Merc with <br>
+                a Mouth“</span>
+            <p id="text" class="text-red-600 hidden lg:flex flex-col"></p>
+        </div>
+        <!-- texts -->
+        <div
+            class="home-content hidden lg:flex flex-col gap-5 absolute bottom-80 m-auto -right-10 z-10 bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-gray-900 to-gray-600 bg-gradient-to-r dark:bg-red-600 p-6 h-fit w-1/3 rounded-md shadow-2xl shadow-gray-950 dark:shadow-white">
+            <h1 class="text-4xl font-bold text-red-600 flex gap-7">Hi I'm Deadpool
+                <img class="w-10" src="../img/deadpool-services4.png" alt="">
+            </h1>
+            <p class="text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio culpa blanditiis
+                quaerat sed in, cumque veritatis voluptas. Maxime ab odio, nobis vitae nihil obcaecati. Voluptatum
+                repellat repudiandae fugiat alias consequuntur?</p>
+            <a class="bg-gray-950 dark:bg-red-600 text-white text-xl px-3 py-2 w-fit rounded-md font-semibold transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-1100 duration-300 shadow-md shadow-white "
+                href="https://marvelstrikeforce.com/en/characters/trait/Minion" target="_blank"> Hire me !</a>
+        </div>
+    </header>
+
+
+    <section id="about" class="px-10 bg-red-300 dark:bg-gradient-to-r from-gray-700 via-gray-900 to-black ">
+        <div class="container mx-auto py-40 flex flex-col-reverse lg:flex-row items-center gap-20 text-center">
+
+            <div class="relative">
+                <img class="about-blod absolute h-3/4 left-0" src="../img/blod-deadpool.png" alt="blod-picture">
+                <div class="w-3/4 rounded-full overflow-hidden mx-32">
+                    <img class="hover:-translate-x-1 hover:scale-105 duration-200" src="../img/deadpool-about2.png"
+                        alt="deadpool-about-picture">
+                </div>
+            </div>
+
+            <div class="my-auto flex flex-col gap-3 ">
+                <h1 class="font-bold text-red-600 text-3xl">About me</h1>
+                <h1 class="font-medium text-2xl dark:text-white">Clean work</h1>
+                <p class="text-gray-950 dark:text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+                    perspiciatis minima error porro quidem, sit, aspernatur aliquam dignissimos iure voluptatum
+                    temporibus. Repellat soluta atque error blanditiis expedita tempora temporibus animi!</p>
+                <h1 class="font-bold text-center underline dark:text-white pt-10">My Skills</h1>
+
+                <h2 class="text-gray-950 font-semibold dark:text-white">Swords</h2>
+                <div class="w-full bg-red-600  h-1.5 rounded-md">
+                    <div class="w-5/6 bg-gray-950 dark:bg-white h-1.5 rounded-md"></div>
+                </div>
+
+                <h2 class="text-gray-950 font-semibold dark:text-white"> Guns </h2>
+                <div class="w-full bg-red-600 h-1.5 rounded-md">
+                    <div class="w-2/6 bg-gray-950 dark:bg-white h-1.5 rounded-md"></div>
+                </div>
+
+                <h2 class="text-gray-950 font-semibold dark:text-white">Daggers</h2>
+                <div class="w-full bg-red-600 h-1.5 rounded-md">
+                    <div class="w-4/6 bg-gray-950 dark:bg-white h-1.5 rounded-md"></div>
+                </div>
+
+                <div
+            class="lg:flex flex-col md:hidden lg:hidden xl:hidden mt-8 gap-5 m-auto bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-gray-900 to-gray-600 bg-gradient-to-r dark:bg-red-600 p-6 h-fit w-2/3 rounded-md shadow-2xl shadow-gray-950 dark:shadow-white">
+            <h1 class="text-4xl font-bold text-red-600 flex gap-7">Hi I'm Deadpool
+                <img class="w-10" src="../img/deadpool-services4.png" alt="">
+            </h1>
+            <p class="text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio culpa blanditiis
+                quaerat sed in, cumque veritatis voluptas. Maxime ab odio, nobis vitae nihil obcaecati. Voluptatum
+                repellat repudiandae fugiat alias consequuntur?</p> <br>
+            <a class="bg-gray-950 dark:bg-red-600 text-white text-xl px-3 py-2 w-fit rounded-md font-semibold transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-1100 duration-300 shadow-md shadow-white "
+                href="https://marvelstrikeforce.com/en/characters/trait/Minion" target="_blank"> Hire me !</a>
+        </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="px-10 bg-red-300 dark:bg-gradient-to-r from-gray-700 via-gray-900 to-black">
+        <div class="container mx-auto">
+
+            <div class="flex flex-col items-center gap-3">
+                <h1 class="font-bold text-red-600 text-3xl ">Services</h1>
+                <h1 class="text-3xl dark:text-white">Lorem ipsum dolor sit amet.</h1>
+                <p class="w-1/2 text-center text-gray-950 dark:text-white">Lorem ipsum dolor sit amet consectetur,
+                    adipisicing elit. Sequi sit adipisci delectus tempora tempore ex ab inventore, vel deleniti dolor
+                    pariatur quae quia autem deserunt, consequatur accusamus, non facere incidunt!</p>
+            </div>
+
+            <div class="p-5 mx-10 sm:p-0 flex flex-wrap justify-between">
+
+                <!-- CARDS-->
+                <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3">
+                    <img class="w-10" src="../img/horse-deadpool.png" alt="">
+                    <h1 class="font-medium text-lg dark:text-white">Lorem, ipsum dolor.</h1>
+                    <p class="text-gray-950 dark:text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Non maiores officia quae voluptate placeat cupiditate blanditiis</p>
+                    <a class="text-red-600 font-bold text-sm" href="#">Read more</a>
+                </div>
+                <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3">
+                    <img class="w-10" src="../img/deadpool-services2.png" alt="">
+                    <h1 class="font-medium text-lg dark:text-white">Lorem, ipsum dolor.</h1>
+                    <p class="text-gray-950 dark:text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Non maiores officia quae voluptate placeat cupiditate blanditiis</p>
+                    <a class="text-red-600 font-bold text-sm" href="#">Read more</a>
+                </div>
+                <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3">
+                    <img class="w-10" src="../img/deadpool-services3.png" alt="">
+                    <h1 class="font-medium text-lg dark:text-white">Lorem, ipsum dolor.</h1>
+                    <p class="text-gray-950 dark:text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Non maiores officia quae voluptate placeat cupiditate blanditiis</p>
+                    <a class="text-red-600 font-bold text-sm" href="#">Read more</a>
+                </div>
+                <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3">
+                    <img class="w-10" src="../img/deadpool-services4.png" alt="">
+                    <h1 class="font-medium text-lg dark:text-white">Lorem, ipsum dolor.</h1>
+                    <p class="text-gray-950 dark:text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Non maiores officia quae voluptate placeat cupiditate blanditiis</p>
+                    <a class="text-red-600 font-bold text-sm" href="#">Read more</a>
+                </div>
+                <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3">
+                    <img class="w-10" src="../img/deadpool-services3.png" alt="">
+                    <h1 class="font-medium text-lg dark:text-white">Lorem, ipsum dolor.</h1>
+                    <p class="text-gray-950 dark:text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Non maiores officia quae voluptate placeat cupiditate blanditiis</p>
+                    <a class="text-red-600 font-bold text-sm" href="#">Read more</a>
+                </div>
+                <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3">
+                    <img class="w-10" src="../img/deadpool-services4.png" alt="">
+                    <h1 class="font-medium text-lg dark:text-white">Lorem, ipsum dolor.</h1>
+                    <p class="text-gray-950 dark:text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Non maiores officia quae voluptate placeat cupiditate blanditiis</p>
+                    <a class="text-red-600 font-bold text-sm" href="#">Read more</a>
+                </div>
+                <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3">
+                    <img class="w-10" src="../img/deadpool-services2.png" alt="">
+                    <h1 class="font-medium text-lg dark:text-white">Lorem, ipsum dolor.</h1>
+                    <p class="text-gray-950 dark:text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Non maiores officia quae voluptate placeat cupiditate blanditiis</p>
+                    <a class="text-red-600 font-bold text-sm" href="#">Read more</a>
+                </div>
+                <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3">
+                    <img class="w-10" src="../img/horse-deadpool.png" alt="">
+                    <h1 class="font-medium text-lg dark:text-white">Lorem, ipsum dolor.</h1>
+                    <p class="text-gray-950 dark:text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Non maiores officia quae voluptate placeat cupiditate blanditiis</p>
+                    <a class="text-red-600 font-bold text-sm" href="#">Read more</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section id="works" class=" bg-red-300 dark:bg-gradient-to-r from-gray-700 via-gray-900 to-black">
+        <div class="container mx-auto pt-12">
+
+            <div class="flex flex-col items-center gap-3">
+                <h1 class="font-bold text-red-600 text-3xl">Portfolio</h1>
+                <h1 class="text-3xl dark:text-white">Works and project</h1>
+                <p class="w-1/2 text-center text-gray-950 dark:text-white pb-10">Lorem ipsum dolor sit amet consectetur,
+                    adipisicing elit. Sequi sit adipisci delectus tempora tempore ex ab inventore, vel deleniti dolor
+                    pariatur quae quia autem deserunt, consequatur accusamus, non facere incidunt!</p>
+            </div>
+            <!-- CARDS -->
+            <div class="md:grid md:grid-rows-2 mx-2 pb-2 gap-x-4">
+                <div class="row-span-2 col-span-2 pb-2 hover:-translate-y-4 hover:scale-105 duration-200">
+                    <img class="rounded-2xl" src="../img/deadpool-picture8.jpeg" alt="">
+                </div>
+                <div class="pb-2 hover:-translate-y-2 hover:scale-105 duration-200">
+                    <img class="rounded-2xl" src="../img/deadpool-picture1.webp" alt="">
+                </div>
+                <div class="pb-2 hover:-translate-y-2 hover:scale-105 duration-200">
+                    <img class="rounded-2xl" src="../img/deadpool-picture4.avif" alt="">
+                </div>
+                <div class="pb-2 hover:-translate-y-2 hover:scale-105 duration-200">
+                    <img class="rounded-2xl" src="../img/deadpool-picture4.avif" alt="">
+                </div>
+                <div class="pb-2 hover:-translate-y-2 hover:scale-105 duration-200">
+                    <img class="rounded-2xl" src="../img/deadpool-picture1.webp" alt="">
+
+
+                </div>
+            </div>
+    </section>
+
+
+    <section id="contact" class="px-10 bg-red-300 dark:bg-gradient-to-r from-gray-700 via-gray-900 to-black pt-10">
+        <div class="container mx-auto">
+
+            <div class="flex flex-col items-center gap-3">
+                <h1 class="font-bold text-red-600 text-3xl">Contact</h1>
+                <h1 class="text-3xl dark:text-white">Lorem ipsum dolor sit amet.</h1>
+                <p class="w-1/2 text-center text-gray-950 dark:text-white">Lorem ipsum dolor sit amet consectetur,
+                    adipisicing elit. Sequi sit adipisci delectus tempora tempore ex ab inventore, vel deleniti dolor
+                    pariatur</p>
+            </div>
+
+
+            <div class="container">
+                <form id="form" action="/" class="flex flex-col gap-5 items-center mt-5 p-8">
+                    <div class="input-control w-full text-center">
+
+                        <input id="username" name="username" type="text"
+                            class="p-2 w-full md:w-1/2 outline outline-4 dark:outline-gray-400 rounded-sm"
+                            placeholder="Your Name">
+                        <div class="error mt-4 text-black dark:text-red-600 font-semibold"></div>
+                    </div>
+                    <div class="input-control w-full text-center">
+                        <input id="email" name="email" type="text"
+                            class="p-2 w-full md:w-1/2 outline outline-4 dark:outline-gray-400 rounded-sm"
+                            placeholder=" Your email">
+                        <div class="error mt-4 text-black dark:text-red-600 font-semibold"></div>
+                    </div>
+                    <div class="input-control w-full text-center">
+                        <input id="password" name="password" type="password"
+                            class="p-2 w-full md:w-1/2 outline outline-4 dark:outline-gray-400 rounded-sm"
+                            placeholder="Your password">
+                        <div class="error mt-4 text-black dark:text-red-600 font-semibold"></div>
+                    </div>
+                    <div class="input-control w-full text-center">
+                        <input id="password2" name="password2" type="password"
+                            class="p-2 w-full md:w-1/2 outline outline-4 dark:outline-gray-400 rounded-sm"
+                            placeholder="Your Password again">
+                        <div class="error mt-4 text-black dark:text-red-600 font-semibold"></div>
+                    </div>
+                    <textarea id="my-text" class="p-2 w-full md:w-1/2 outline outline-4 dark:outline-gray-400 rounded-sm" cols="30"
+                        rows="10" placeholder="Message.."></textarea>
+                        <p id="result" class="w-2/4 text-right"></p>
+                    <button type="submit"
+                        class="w-1/2 uppercase bg-gray-950 dark:bg-graoutline-gray-400 text-white hover:bg-red-600 hover:text-gray-950 font-medium px-3 py-2 cursor-pointer rounded-md transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-1100 duration-300">Sign
+                        Up</button>
+                        
+                </form>
+            </div>
+
+    </section>
+    <footer>
+        <div class="w-full bg-red-300 dark:bg-gradient-to-r from-gray-700 via-gray-900 to-black">
+            <div class="container mx-auto py-5 flex flex-row-reverse justify-between md:flex-row items-center">
+                <div class="flex items-center gap-2">
+                    <img src="../img/emoji-deadpool-logo.png" alt="Logo" class="hidden md:block w-24 animate-pulse">
+                    <div class="absolute w-28 h-28"></div>
+                </div>
+                <span class="hidden md:block font-medium text-black dark:text-white">© 2023 Germany. design with 💔 by
+                    Lukas Knap </span>
+                <div class="flex gap-1">
+                    <a href="https://www.instagram.com/deadpool/" target="_blank">
+                        <i class="w-12 cursor-pointer animate-bounce fa-brands fa-instagram dark:text-white"></i></a>
+                    <a href="https://www.facebook.com/Deadpool/" target="_blank">
+                        <i class="w-12 cursor-pointer animate-bounce fa-brands fa-facebook-f dark:text-white"></i></a>
+                    <a href="https://www.tiktok.com/tag/deadpool" target="_blank">
+                        <i class="w-12 cursor-pointer animate-bounce fa-brands fa-tiktok dark:text-white"></i></a>
+                    <!--    <i class="w-12 cursor-pointer animate-bounce fa-brands fa-whatsapp dark:text-white"></i> -->
+                    <!--  <i class="w-12 cursor-pointer animate-bounce fa-brands fa-github dark:text-white"></i> -->
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a id="scroll-up"
+        class="fixed right-4 -bottom-1/2 text-black shadow-sm inline-block px-4 py-2 rounded-full text-lg z-50 hover:-translate-y-1 ease-in duration-200"
+        href="">
+        <img class="w-20 mx-4" src="../img/deadpool-scroll-up.png" alt="scroll-up-picture">
+        <div
+            class="absolute w-28 h-28 -bottom-3 bg-gradient-to-b from-gray-900 to-gray-600 bg-gradient-to-r rounded-full -z-10">
+        </div>
+    </a>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="/main.js"></script>
+    <script src="/autotyping.js"></script>
+
+
+</body>
+
+</html>
